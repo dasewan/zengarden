@@ -1,0 +1,5 @@
+/*http://blog.csdn.net/sinat_36146776/article/details/53138178*/
+
+input::-webkit-input-placeholder, input::-moz-placeholder, textarea.-webkit-input-placeholder, textarea.-moz-placeholder {}
+
+input: -webkit-input-placeholder, input: -moz-placeholder, textarea:-moz-placeholder {}
