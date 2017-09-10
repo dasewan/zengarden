@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--http://www.w3cplus.com/content/css3-background-clip -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Zen Garden: The Beauty of CSS Design</title>
+
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dave Shea">
+  <meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
+  <meta name="robots" content="all">
+
+  <style>
+    .demo {
+      width: 220px;
+      height: 115px;
+      padding: 20px;
+      border: 20px dashed rgba(255, 0, 0, 0.8);
+      background: green url("./99.jpg") no-repeat;
+      font-size: 16px;
+      font-weight: bold;
+      color: red;
+      background-clip: padding-box;
+    }
+
+    .facebook {
+      background: #3B5A98;
+      border: 20px solid rgba(134, 134, 134, 0.8);
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+      width: 150px;
+      height: 65px;
+      line-height: 65px;
+      /*-moz-border-radius: 15px;
+      -webkit-border-radius: 15px;*/
+      border-radius: 15px;
+      font: bold 25px Airal;
+      /*-moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      -o-background-clip: padding-box;*/
+      background-clip: padding-box;
+    }
+  </style>
+  <!--[if lt IE 9]>
+	<script src="script/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body id="css-zen-garden">
+
+  <div class="demo">123123</div>
+  <div class='facebook'>
+    facebook Tips
+  </div>
+</body>
+
+</html>
