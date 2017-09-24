@@ -24,8 +24,39 @@
       font-size: 16px;
       font-weight: bold;
       color: red;
+      margin-bottom: 20px;
+      /*background-clip: padding-box;*/
+    }
+
+    .borderBox {
+      -moz-background-clip: border;
+      -webkit-background-clip: border-box;
+      -o-background-clip: border-box;
+      background-clip: border-box;
+    }
+
+    .paddingBox {
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      -o-background-clip: padding-box;
       background-clip: padding-box;
     }
+
+    .contentBox {
+      -webkit-background-clip: content-box;
+      -o-background-clip: content-box;
+      background-clip: content-box;
+    }
+
+    .text {
+      font-size: 40px;
+      text-transform: uppercase;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+
+
 
     .facebook {
       background: #3B5A98;
@@ -44,6 +75,14 @@
       -webkit-background-clip: padding-box;
       -o-background-clip: padding-box;*/
       background-clip: padding-box;
+      display: none;
+      z-index: 9999;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
     }
   </style>
   <!--[if lt IE 9]>
@@ -53,10 +92,32 @@
 
 <body id="css-zen-garden">
 
-  <div class="demo">123123</div>
-  <div class='facebook'>
+  <div class="demo borderBox">123123</div>
+  <div class="demo paddingBox">123123</div>
+  <div class="demo contentBox">123123</div>
+  <div class="demo text">123123</div>
+
+  <div class='facebook' id="log_window" onclick="javascript:cancel_shield()">
     facebook Tips
   </div>
+  <a href="javascript:shield()" id="test">打开遮罩</a>
+  <script>
+    function shield() {
+      var s = document.getElementById("test");
+      s.style.display = "block";
+
+      var l = document.getElementById("log_window");
+      l.style.display = "block";
+    }
+
+    function cancel_shield() {
+      // var s = document.getElementById("test");
+      // s.style.display = "none";
+
+      var l = document.getElementById("log_window");
+      l.style.display = "none";
+    }
+  </script>
 </body>
 
 </html>
