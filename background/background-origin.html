@@ -26,10 +26,24 @@
       font-weight: bold;
       color: red;
       background-clip: padding-box;
+      margin-bottom: 10px
     }
 
-    .demo {
+    .padding-box {
+      background-origin: padding-box;
+    }
+
+    .border-box {
       background-origin: border-box;
+    }
+
+    .border-box2 {
+      background-origin: border-box;
+      background-position: 20px 20px;
+    }
+
+    .content-box {
+      background-origin: content-box;
     }
   </style>
   <!--[if lt IE 9]>
@@ -38,8 +52,14 @@
 </head>
 
 <body id="css-zen-garden">
-
-  <div class="demo"></div>
+  padding-box(默认):
+  <div class="demo padding-box"></div>
+  border-box:
+  <div class="demo border-box"></div>
+  border-box2:
+  <div class="demo border-box2"></div>
+  content-box:
+  <div class="demo content-box"></div>
 
 </body>
 
