@@ -17,7 +17,7 @@
 
   <style>
     .bsize1 {
-      width: 400px;
+      width: 500px;
       height: 200px;
       /*background: url("img/demo.jpg") no-repeat;*/
       background: url("../img/99.jpg") no-repeat;
@@ -25,12 +25,20 @@
       overflow: hidden;
     }
 
+    .auto {
+      -moz-background-size: auto;
+      -webkit-background-size: auto;
+      -o-background-size: auto;
+      background-size: auto;
+      background-size: auto;
+    }
+
     .bsize2 {
-      background-size: 400px 200px;
+      background-size: 500px 200px;
     }
 
     .bsize3 {
-      background-size: 400px;
+      background-size: 500px;
     }
 
     .bsize4 {
@@ -71,17 +79,19 @@
 <body id="css-zen-garden">
   <h3>原图</h3>
   <div class="images">
-    <img src="http://images2015.cnblogs.com/blog/561794/201603/561794-20160310002800647-50077395.jpg" width="100%" />
+    <img src="../img/99.jpg" width="100%" />
   </div>
-  <h3>固定宽度400px和高度200px后的图片</h3>
+  <h3>固定宽度500px和高度200px后的图片</h3>
   <div class="bsize1"></div>
-  <h3>固定宽度400px和高度200px－使用background－size:400px 200px缩放设置</h3>
+  <h3>auto</h3>
+  <div class="bsize1 auto"></div>
+  <h3>固定宽度500px和高度200px－使用background－size:500px 200px缩放设置</h3>
   <div class="bsize1 bsize2"></div>
-  <h3>固定宽度400px和高度200px－使用background-size:400px;的缩放设置</h3>
+  <h3>固定宽度500px和高度200px－使用background-size:500px;的缩放设置</h3>
   <div class="bsize1 bsize3"></div>
-  <h3>固定宽度400px和高度200px－使用background-size:100% 100%的缩放设置</h3>
+  <h3>固定宽度500px和高度200px－使用background-size:100% 100%的缩放设置</h3>
   <div class="bsize1 bsize4"></div>
-  <h3>固定宽度400px和高度200px－使用background-size:100%的缩放设置</h3>
+  <h3>固定宽度500px和高度200px－使用background-size:100%的缩放设置</h3>
   <div class="bsize1 bsize5"></div>
   <h3>使用属性cover来设置背景图片</h3>
   <div class="bsize1 cover"></div>
